@@ -1,0 +1,25 @@
+:root{
+    --main-color-theme: #f0f2f5;
+    --main-color-icon: #54656f;
+    --main-color-border: #e9edef;
+    --main-color-black: black;
+    --main-color-white: #ffffff;
+    --main-color-notifications: #25d366;
+    --main-color-time: #3ab269;
+    --main-color-archives: #00a884;
+    --main-color-conversations: #111b21;
+    --main-color-conversations-content: #3b4a54;
+    --main-color-conversations-background: #f5f6f6;
+    --main-color-title: #41525d;
+    --main-color-home-footer: #25d366;
+    --main-color-search: #46a392;
+    --main-color-ArrowLeft-search: #00a884;
+    --main-color-no-results: #8696a0;
+    --border-list: #e9edef;
+    --black-rgb : 11,20,26;
+    --white-rgb : 255,255,255;
+    --shadow-rgb: 11,20,26;
+    --header-icon: #e0e2e5;
+    --intro-secondary: #667781;
+    --secondary-lighter: #8696a0;
+}

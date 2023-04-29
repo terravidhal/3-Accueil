@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> 
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+     <div class="container-home grid">
+        <aside id="aside-left">
+            <section id="aside-home" class="page-aside-left">
+                <div class="aside-left-top">
+                    <div class="user-infos flex aic">
+                        <div class="profile-picture flex-1 menu-page" data-id="profile">
+                            <img src="/assets/images/accueil/profil/profil.jpg" alt="profile picture">
+                        </div>
+                        <div class="user-icons flex flex-1 jcse">
+                            <div class="status">
+                                <img src="/assets/images/accueil/icons/statut.svg" alt="status icon">
+                            </div>
+                            <div class="message menu-page" data-id="contact">
+                                <img src="/assets/images/accueil/icons/message.svg" alt="message icon">
+                            </div>
+                            <div class="menu relative">
+                                <img src="/assets/images/accueil/icons/3-bars.svg" alt="icon menu">
+                                <ul class="menu-lists">
+                                    <li class="" data-id="">Nouveau groupe</li>
+                                    <li class="" data-id="">Messages Importants</li>
+                                    <li class="" data-id="">Séléctionnez les discussions</li>
+                                    <!-- <li class="menu-page" data-id="profile">profile</li>
+                                    <li class="menu-page" data-id="contact">Nouvelle discussion</li> -->
+                                    <li class="menu-page" data-id="etiquette">etiquette</li>
+                                    <li class="menu-page" data-id="settings">Paramètres</li>
+                                    <li class="" data-id="">Déconnexion</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="aside-left-content">
+                    <div class="search-bar flex aic">
+                        <div class="bars-icon flex aic relative">
+                            <div class="search-icon"></div>
+                            <input type="text" placeholder="Rechercher ou démarrer une nouvelle discussion">
+                        </div>
+                        <img src="/assets/images/accueil/icons/3-bars-menu.svg" alt="filter">
+                    </div>
+                    <div class="archives-conversations">
+                        <div class="messages-no-results none">
+                            <div class="no-results">
+                                Aucun contact, discusion ou message trouvé
+                            </div>
+                            <div class="no-results-more">
+                                Utilisez WhatsApp sur votre téléphone pour voir des discussions et messages plus anciens.
+                            </div>
+                        </div>    
+                        <div class="archives flex aic gap-25 contact-list" data-id="Archives">
+                            <div class="archives-icon flex aic">
+                                <img src="/assets/images/accueil/icons/archives.svg" alt="">
+                            </div>
+                            <div class="archives-messages flex flex-1">
+                                <div class="archives-content flex-1 contact-name bold">Archivées</div>
+                                <div class="archives-number actives fs-09">6</div>
+                            </div>
+                        </div>
+                        <div class="contact-items">
+                            <div class="contact-item flex contact-list" data-id="Messages">
+                                <div class="profile-picture-item">
+                                    <img src="/assets/images/accueil/contacts/avatar-10.jpg" alt="profile picture">
+                                </div>
+                                <div class="contact-details flex flex-2">
+                                    <div class="contact-infos flex-2">
+                                        <div class="contact-name bold">Business Mr Alain Tardif</div>
+                                        <div class="contact-message fs-09">2vq33v5y</div>
+                                    </div>
+                                    <div class="contact-time-icon">
+                                        <div class="contact-time fs-09">16:34</div>
+                                        <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-item flex contact-list" data-id="Messages">
+                                <div class="profile-picture-item">
+                                    <img src="/assets/images/accueil/contacts/avatar-7.jpg" alt="profile picture">
+                                </div>
+                                <div class="contact-details flex flex-2">
+                                    <div class="contact-infos flex-2">
+                                        <div class="contact-name bold">Flora Mariane</div>
+                                        <div class="contact-message fs-09">Quoi de neuf Vidhal ?</div>
+                                    </div>
+                                    <div class="contact-time-icon">
+                                        <div class="contact-time fs-09">08:20</div>
+                                        <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-item flex contact-list" data-id="Messages">
+                                <div class="profile-picture-item">
+                                    <img src="/assets/images/accueil/contacts/avatar-2.png" alt="profile picture">
+                                </div>
+                                <div class="contact-details flex flex-2">
+                                    <div class="contact-infos flex-2">
+                                        <div class="contact-name bold">Claire</div>
+                                        <div class="contact-message fs-09 flex gap-5">
+                                            <img src="/assets/images/accueil/icons/icone-reception.svg" alt="acusé de reception">
+                                            <span>Ok merci</span>
+                                        </div>
+                                    </div>
+                                    <div class="contact-time-icon">
+                                        <div class="contact-time fs-09">02:34</div>
+                                        <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-item flex contact-list" data-id="Messages">
+                                <div class="profile-picture-item">
+                                    <img src="/assets/images/accueil/contacts/software-developer-g40d2c2b0d_1920.jpg" alt="profile picture">
+                                </div>
+                                <div class="contact-details flex flex-2">
+                                    <div class="contact-infos flex-2">
+                                        <div class="contact-name bold">ACTU WEB DEVELOPER</div>
+                                        <div class="contact-message fs-09 flex gap-5">
+                                            <span>~ ~ C M U D :</span>
+                                            <img src="/assets/images/accueil/icons/icon-camera.svg" alt="acusé de reception">
+                                             Photo
+                                        </div>
+                                    </div>
+                                    <div class="contact-time-icon">
+                                        <div class="contact-time fs-09">Hier</div>
+                                        <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-item flex contact-list" data-id="Messages">
+                                <div class="profile-picture-item">
+                                    <img src="/assets/images/accueil/contacts/avatar-2.jpg" alt="profile picture">
+                                </div>
+                                <div class="contact-details flex flex-2">
+                                    <div class="contact-infos flex-2">
+                                        <div class="contact-name bold">Sofie</div>
+                                        <div class="contact-message fs-09">Je rentre demain</div>
+                                    </div>
+                                    <div class="contact-time-icon">
+                                        <div class="contact-time fs-09">Lundi</div>
+                                        <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-item flex contact-list" data-id="Messages">
+                                <div class="profile-picture-item">
+                                    <img src="/assets/images/accueil/contacts/avatar-3.jpg" alt="profile picture">
+                                </div>
+                                <div class="contact-details flex flex-2">
+                                    <div class="contact-infos flex-2">
+                                        <div class="contact-name bold">Giselle</div>
+                                        <div class="contact-message fs-09">Cool</div>
+                                    </div>
+                                    <div class="contact-time-icon">
+                                        <div class="contact-time fs-09">Dimanche</div>
+                                        <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-item flex contact-list" data-id="Messages">
+                                <div class="profile-picture-item">
+                                    <img src="/assets/images/accueil/contacts/avatar-4.jpg" alt="profile picture">
+                                </div>
+                                <div class="contact-details flex flex-2">
+                                    <div class="contact-infos flex-2">
+                                        <div class="contact-name bold">Audrey</div>
+                                        <div class="contact-message fs-09">Call me</div>
+                                    </div>
+                                    <div class="contact-time-icon">
+                                        <div class="contact-time fs-09">27/04/2023</div>
+                                        <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-item flex contact-list" data-id="Messages">
+                                <div class="profile-picture-item">
+                                    <img src="/assets/images/accueil/contacts/avatar-6.jpg" alt="profile picture">
+                                </div>
+                                <div class="contact-details flex flex-2">
+                                    <div class="contact-infos flex-2">
+                                        <div class="contact-name bold">Stéphanelle</div>
+                                        <div class="contact-message fs-09">N'oublie pas le collis</div>
+                                    </div>
+                                    <div class="contact-time-icon">
+                                        <div class="contact-time fs-09">26/04/2023</div>
+                                        <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div> 
+            </section>
+            <section id="settings" class="page-aside-left">settings
+                <li class="return">return</li>
+            </section>
+            <section id="profile" class="page-aside-left">Profile
+                <li class="return">return</li>
+            </section>
+            <section id="contact" class="page-aside-left">Contact
+                <li class="return">return</li>
+            </section>
+            <section id="etiquette" class="page-aside-left">Etiquette
+                <li class="return">return</li>
+            </section>
+        </aside>
+        <div class="content">
+            <section id="content-home" class="page-content">
+                <div class="home-elements">
+                    <div class="home-picture">
+                        <img src="/assets/images/accueil/icons/icon-accueil-3.svg" alt="icon home">
+                    </div>
+                    <h1 class="home-title">WhatsApp Web</h1>
+                    <div class="home-description">
+                        Envoyez et recevez des messages sans avoir à garder votre téléphone connecté.<br>Utilisez WhatsApp sur un maximum de 4 appareils et 1&nbsp;téléphone, simultanément.
+                    </div>
+                    <div class="home-infos">
+                        <img src="/assets/images/accueil/icons/lock.svg" alt="lock">
+                        <p>Chiffré de bout en bout</p>
+                    </div>
+                </div>
+                <div class="home-footer"></div>
+            </section>
+            <section id="Archives" class="page-content">Archives</section>
+            <section id="Messages" class="page-content">Messages</section>
+        </div>
+     </div>
+  
+   
+     <script src="/assets/js/functions.js"></script>
+     <script src="/assets/js/main.js"></script>
+</body>
+</html>
