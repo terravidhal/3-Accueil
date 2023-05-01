@@ -2,9 +2,13 @@
 /******** VARIABLE DECLARATION ************/
 const pagesAsideLeft = document.getElementsByClassName('page-aside-left');
 const pagesContent = document.getElementsByClassName('page-content');
-const menuPages = document.getElementsByClassName('menu-page')
-const contactLists = document.getElementsByClassName('contact-list')
-const returnHome = document.getElementsByClassName('return')
+const menuPages = document.getElementsByClassName('menu-page');
+const contactLists = document.getElementsByClassName('contact-list');
+const returnHome = document.getElementsByClassName('return');
+const audio = document.getElementById('audio');
+const progress = document.getElementById('progress');
+const playButton = document.getElementById('playButton');
+const pauseButton = document.getElementById('pauseButton');
 
 /******** OBJECT CONTAINING OUR FUNCTIONS ************/
 
@@ -57,7 +61,7 @@ var listenersFunctions = {
                     element.style.display = 'none';
                 }
                 listenersFunctions.showActiveDiscussion(contactList, Class = "active-bg")
-                
+
                 const pageElements = document.getElementById(pageContentID);
                 pageElements.style.display = 'block';
             });
@@ -72,6 +76,38 @@ var listenersFunctions = {
             });
             contactItem.addEventListener('mouseout', () => {
                 document.querySelectorAll('.contact-time-icon >img')[index].classList.remove('arrow-active');
+            });
+        }
+    },
+    showIconMessage: () => {
+        const messageBlocContents = document.querySelectorAll('.message-bloc.receive')
+        for (let index = 0; index < messageBlocContents.length; index++) {
+            const element = messageBlocContents[index];
+            element.addEventListener('mouseover', () => {
+                document.querySelectorAll('.message-bloc.receive .icon-arrow-bottom > img')[index].classList.add('m-active');
+            });
+            element.addEventListener('mouseout', () => {
+                document.querySelectorAll('.message-bloc.receive .icon-arrow-bottom > img')[index].classList.remove('m-active');
+            });
+        }
+        const messageBlocsend = document.querySelectorAll('.message-bloc-s')
+        for (let index = 0; index < messageBlocsend.length; index++) {
+            const element = messageBlocsend[index];
+            element.addEventListener('mouseover', () => {
+                document.querySelectorAll('.message-bloc-s .icon-arrow-bottom-s > img')[index].classList.add('m-active');
+            });
+            element.addEventListener('mouseout', () => {
+                document.querySelectorAll('.message-bloc-s .icon-arrow-bottom-s > img')[index].classList.remove('m-active');
+            });
+        }
+        const audioBloc = document.querySelectorAll('.audio-bloc')
+        for (let index = 0; index < audioBloc.length; index++) {
+            const element = audioBloc[index];
+            element.addEventListener('mouseover', () => {
+                document.querySelectorAll('.icon-arrow-bottom-audio > img')[index].classList.add('m-active');
+            });
+            element.addEventListener('mouseout', () => {
+                document.querySelectorAll('.icon-arrow-bottom-audio > img')[index].classList.remove('m-active');
             });
         }
     },
@@ -106,13 +142,13 @@ var listenersFunctions = {
         document.querySelector('.bars-icon input').value = '';
     },
     searchMessages: (searchTerm) => {
-        let resultFound = false; 
+        let resultFound = false;
 
         for (let index = 0; index < contactLists.length; index++) {
             const messageText = contactLists[index].textContent.toLowerCase();
             const contactName = document.getElementsByClassName('contact-name');
 
-            
+
             if (messageText.indexOf(searchTerm.toLowerCase()) !== -1) {
                 contactLists[index].style.display = 'flex';
                 resultFound = true; // one result was found
@@ -136,14 +172,76 @@ var listenersFunctions = {
                     contactName[index].removeAttribute('data-original-text');
                 }
             }
-      
+
         }
 
         // Display the message "No contact, discussion or message found" if no results were found
         const messagesNoResults = document.querySelector('.messages-no-results');
-        !resultFound ?  messagesNoResults.classList.remove('none') : messagesNoResults.classList.add('none');  
-        
-    }
+        !resultFound ? messagesNoResults.classList.remove('none') : messagesNoResults.classList.add('none');
+
+    },
+
+    updateProgress: () => {
+        audio.addEventListener('timeupdate', () => {
+            const duration = audio.duration;
+            const currentTime = audio.currentTime;
+            const percent = (currentTime / duration) * 100;
+            progress.value = percent;
+            console.log(currentTime);
+        });
+    },
+    ConvertCurrentTime: () => {
+        audio.addEventListener('timeupdate', () => {
+            const currentTime = audio.currentTime;
+            // Convertir le temps actuel en minutes et secondes
+            const minutes = Math.floor(currentTime / 60);
+            const seconds = Math.floor(currentTime % 60);
+
+            // Ajouter un zéro devant les secondes si nécessaire
+            const displaySeconds = seconds < 10 ? '0' + seconds : seconds;
+
+            // Afficher le temps au format "minutes:secondes" dans la console
+           // console.log(`${minutes}:${displaySeconds}`);
+            const audioDuration = document.getElementsByClassName('audio-duration');
+            for (let index = 0; index < audioDuration.length; index++) {
+                const element = audioDuration[index];
+                element.innerHTML = `${minutes}:${displaySeconds}`;
+            }
+        });
+    },
+
+    updateAudioPosition: () => {
+        progress.addEventListener('change', () => {
+            let value = progress.value;
+            let max = progress.max;
+            let position = (value / max) * audio.duration;
+            audio.currentTime = position;
+        });
+    },
+    PlayEndAudio: () => {
+        playButton.addEventListener('click', () => {
+            playButton.classList.add('none');
+            pauseButton.classList.remove('none');
+            document.getElementsByClassName('profil-picture-microphone')[0].classList.add('none');
+            document.getElementsByClassName('reading-speed')[0].classList.remove('none');
+            audio.play();
+        });
+
+        pauseButton.addEventListener('click', () => {
+            pauseButton.classList.add('none');
+            playButton.classList.remove('none');
+            audio.pause();
+        });
+
+        audio.addEventListener('ended', () => {
+            progress.value = 100;
+            document.getElementsByClassName('profil-picture-microphone')[0].classList.remove('none');
+            document.getElementsByClassName('reading-speed')[0].classList.add('none');
+            pauseButton.classList.add('none');
+            playButton.classList.remove('none');
+            progress.value = 0;
+        });
+    },
 
 }
 
@@ -159,6 +257,11 @@ var setupFunctions = () => {
     listenersFunctions.showMenu();
     listenersFunctions.getInputSearch();
     listenersFunctions.TransformSearchIcon();
+    listenersFunctions.updateProgress();
+    listenersFunctions.updateAudioPosition();
+    listenersFunctions.PlayEndAudio();
+    listenersFunctions.showIconMessage();
+    listenersFunctions.ConvertCurrentTime();
 }
 
 

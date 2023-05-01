@@ -15,6 +15,17 @@
     --main-color-search: #46a392;
     --main-color-ArrowLeft-search: #00a884;
     --main-color-no-results: #8696a0;
+    --main-color-vue: #33c0ff;
+    --main-color-progress-bars: #b0ceae;
+    --main-color-button-play-pause-microphone: #6f8171;
+    --main-color-bg-message-send: #d9fdd3;
+    --main-color-text-message-send: #111b21;
+    --main-color-hours-message-send-receive: #667781;
+    --main-color-icon-message: #54656f;
+    --main-color-bg-1x: #96b1a1;
+    --main-color-text-1x: #f0ffe4;
+    --main-color-audio-time: #667781;
+    --main-color-audio-duration: #9bb0ac;
     --border-list: #e9edef;
     --black-rgb : 11,20,26;
     --white-rgb : 255,255,255;
@@ -22,4 +33,8 @@
     --header-icon: #e0e2e5;
     --intro-secondary: #667781;
     --secondary-lighter: #8696a0;
+    --conversation-header-border: #d1d7db;
+    --panel-header-background: #f0f2f5;
+    --bubble-meta: #667781;
+    --ptt-gray-badge: rgba(84,101,111,0.5);
 }
