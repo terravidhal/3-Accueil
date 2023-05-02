@@ -182,6 +182,10 @@ body {
      margin: 55px;
  }
 
+ .M-L-206{
+   margin-left: 206px;
+ }
+
  /** FLEXBOX **/
 
  .flex {
@@ -306,4 +310,4 @@ body {
  .duration{
    color: var(--main-color-audio-time);
  }
-
+ 

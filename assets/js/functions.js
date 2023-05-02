@@ -100,6 +100,26 @@ var listenersFunctions = {
                 document.querySelectorAll('.message-bloc-s .icon-arrow-bottom-s > img')[index].classList.remove('m-active');
             });
         }
+        const pictureBloc = document.querySelectorAll('.picture-bloc')
+        for (let index = 0; index < pictureBloc.length; index++) {
+            const element = pictureBloc[index];
+            element.addEventListener('mouseover', () => {
+                document.querySelectorAll('.picture-bloc .icon-arrow-bottom-p > img')[index].classList.add('m-active');
+            });
+            element.addEventListener('mouseout', () => {
+                document.querySelectorAll('.picture-bloc .icon-arrow-bottom-p > img')[index].classList.remove('m-active');
+            });
+        }
+        const pictureMessageBloc = document.querySelectorAll('.picture-message-bloc')
+        for (let index = 0; index < pictureMessageBloc.length; index++) {
+            const element = pictureMessageBloc[index];
+            element.addEventListener('mouseover', () => {
+                document.querySelectorAll('.picture-message-bloc .icon-arrow-bottom-p > img')[index].classList.add('m-active');
+            });
+            element.addEventListener('mouseout', () => {
+                document.querySelectorAll('.picture-message-bloc .icon-arrow-bottom-p > img')[index].classList.remove('m-active');
+            });
+        }
         const audioBloc = document.querySelectorAll('.audio-bloc')
         for (let index = 0; index < audioBloc.length; index++) {
             const element = audioBloc[index];
