@@ -64,8 +64,16 @@ var listenersFunctions = {
 
                 const pageElements = document.getElementById(pageContentID);
                 pageElements.style.display = 'block';
+                listenersFunctions.showFocusInput();
             });
         }
+    },
+    showFocusInput: () =>{
+       let inputText = document.querySelectorAll('.input-bars > input');
+       for (let index = 0; index < inputText.length; index++) {
+           const element = inputText[index];
+           element.focus();
+       }
     },
     showIconDiscussion: () => {
         const contactItems = document.getElementsByClassName('contact-item')
