@@ -26,6 +26,8 @@
     --main-color-text-1x: #f0ffe4;
     --main-color-audio-time: #667781;
     --main-color-audio-duration: #9bb0ac;
+    --main-color-message-send-content: #06cf9c;
+    --main-color-message-send: #d1f4cc;
     --border-list: #e9edef;
     --black-rgb : 11,20,26;
     --white-rgb : 255,255,255;
@@ -37,4 +39,6 @@
     --panel-header-background: #f0f2f5;
     --bubble-meta: #667781;
     --ptt-gray-badge: rgba(84,101,111,0.5);
+    --rich-text-panel-background:#f0f2f5;
+    ----border-stronger:#e9edef;
 }

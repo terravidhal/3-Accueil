@@ -120,6 +120,16 @@ var listenersFunctions = {
                 document.querySelectorAll('.picture-message-bloc .icon-arrow-bottom-p > img')[index].classList.remove('m-active');
             });
         }
+        const responseMessageBloc = document.querySelectorAll('.response-message-bloc')
+        for (let index = 0; index < responseMessageBloc.length; index++) {
+            const element = responseMessageBloc[index];
+            element.addEventListener('mouseover', () => {
+                document.querySelectorAll('.response-message-bloc .icon-arrow-bottom-resp > img')[index].classList.add('m-active');
+            });
+            element.addEventListener('mouseout', () => {
+                document.querySelectorAll('.response-message-bloc .icon-arrow-bottom-resp > img')[index].classList.remove('m-active');
+            });
+        }
         const audioBloc = document.querySelectorAll('.audio-bloc')
         for (let index = 0; index < audioBloc.length; index++) {
             const element = audioBloc[index];
