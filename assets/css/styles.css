@@ -2,7 +2,7 @@
 
 .container-home {
     height: 100vh;
-    grid-template-columns: 410.4px 955.6px;
+    grid-template-columns: 410.4px calc(100vw - 410.4px); /*955.6px*/
     grid-template-rows: 1fr;
     grid-template-areas: "aside-left content";
 }
