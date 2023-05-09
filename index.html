@@ -8,563 +8,567 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> 
     <link rel="stylesheet" href="/assets/css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/assets/images/accueil/favicon.png" type="image/x-icon">
 </head>
 <body>
-     <div class="container-home grid">
-        <aside id="aside-left">
-            <section id="aside-home" class="page-aside-left">
-                <div class="aside-left-top">
-                    <div class="user-infos flex aic">
-                        <div class="profile-picture flex-1 menu-page" data-id="profile">
-                            <img src="/assets/images/accueil/profil/profil.jpg" alt="profile picture">
-                        </div>
-                        <div class="user-icons flex flex-1 jcse">
-                            <div class="status">
-                                <img src="/assets/images/accueil/icons/statut.svg" alt="status icon">
-                            </div>
-                            <div class="message menu-page" data-id="contact">
-                                <img src="/assets/images/accueil/icons/message.svg" alt="message icon">
-                            </div>
-                            <div class="menu relative">
-                                <img src="/assets/images/accueil/icons/3-bars.svg" alt="icon menu">
-                                <ul class="menu-lists">
-                                    <li class="" data-id="">Nouveau groupe</li>
-                                    <li class="" data-id="">Messages Importants</li>
-                                    <li class="" data-id="">Séléctionnez les discussions</li>
-                                    <!-- <li class="menu-page" data-id="profile">profile</li>
-                                    <li class="menu-page" data-id="contact">Nouvelle discussion</li> -->
-                                    <li class="menu-page" data-id="etiquette">etiquette</li>
-                                    <li class="menu-page" data-id="settings">Paramètres</li>
-                                    <li class="" data-id="">Déconnexion</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="aside-left-content">
-                    <div class="search-bar flex aic">
-                        <div class="bars-icon flex aic relative">
-                            <div class="search-icon"></div>
-                            <input type="text" placeholder="Rechercher ou démarrer une nouvelle discussion">
-                        </div>
-                        <img src="/assets/images/accueil/icons/3-bars-menu.svg" alt="filter">
-                    </div>
-                    <div class="archives-conversations">
-                        <div class="messages-no-results none">
-                            <div class="no-results">
-                                Aucun contact, discusion ou message trouvé
-                            </div>
-                            <div class="no-results-more">
-                                Utilisez WhatsApp sur votre téléphone pour voir des discussions et messages plus anciens.
-                            </div>
-                        </div>    
-                        <div class="archives flex aic gap-25 contact-list" data-id="Archives">
-                            <div class="archives-icon flex aic">
-                                <img src="/assets/images/accueil/icons/archives.svg" alt="">
-                            </div>
-                            <div class="archives-messages flex flex-1">
-                                <div class="archives-content flex-1 contact-name bold">Archivées</div>
-                                <div class="archives-number actives fs-09">6</div>
-                            </div>
-                        </div>
-                        <div class="contact-items">
-                            <div class="contact-item flex contact-list" data-id="Messages">
-                                <div class="profile-picture-item">
-                                    <img src="/assets/images/accueil/contacts/avatar-10.jpg" alt="profile picture">
-                                </div>
-                                <div class="contact-details flex flex-2">
-                                    <div class="contact-infos flex-2">
-                                        <div class="contact-name bold">Business Mr Alain Tardif</div>
-                                        <div class="contact-message fs-09">2vq33v5y</div>
-                                    </div>
-                                    <div class="contact-time-icon">
-                                        <div class="contact-time fs-09">16:34</div>
-                                        <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="contact-item flex contact-list" data-id="Messages">
-                                <div class="profile-picture-item">
-                                    <img src="/assets/images/accueil/contacts/avatar-7.jpg" alt="profile picture">
-                                </div>
-                                <div class="contact-details flex flex-2">
-                                    <div class="contact-infos flex-2">
-                                        <div class="contact-name bold">Flora Mariane</div>
-                                        <div class="contact-message fs-09">Quoi de neuf Vidhal ?</div>
-                                    </div>
-                                    <div class="contact-time-icon">
-                                        <div class="contact-time fs-09">08:20</div>
-                                        <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="contact-item flex contact-list" data-id="Messages">
-                                <div class="profile-picture-item">
-                                    <img src="/assets/images/accueil/contacts/avatar-2.png" alt="profile picture">
-                                </div>
-                                <div class="contact-details flex flex-2">
-                                    <div class="contact-infos flex-2">
-                                        <div class="contact-name bold">Claire</div>
-                                        <div class="contact-message fs-09 flex gap-5">
-                                            <img src="/assets/images/accueil/icons/icone-reception.svg" alt="acusé de reception">
-                                            <span>Ok merci</span>
-                                        </div>
-                                    </div>
-                                    <div class="contact-time-icon">
-                                        <div class="contact-time fs-09">02:34</div>
-                                        <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="contact-item flex contact-list" data-id="Messages">
-                                <div class="profile-picture-item">
-                                    <img src="/assets/images/accueil/contacts/software-developer-g40d2c2b0d_1920.jpg" alt="profile picture">
-                                </div>
-                                <div class="contact-details flex flex-2">
-                                    <div class="contact-infos flex-2">
-                                        <div class="contact-name bold">ACTU WEB DEVELOPER</div>
-                                        <div class="contact-message fs-09 flex gap-5">
-                                            <span>~ ~ C M U D :</span>
-                                            <img src="/assets/images/accueil/icons/icon-camera.svg" alt="acusé de reception">
-                                             Photo
-                                        </div>
-                                    </div>
-                                    <div class="contact-time-icon">
-                                        <div class="contact-time fs-09">Hier</div>
-                                        <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="contact-item flex contact-list" data-id="Messages">
-                                <div class="profile-picture-item">
-                                    <img src="/assets/images/accueil/contacts/avatar-2.jpg" alt="profile picture">
-                                </div>
-                                <div class="contact-details flex flex-2">
-                                    <div class="contact-infos flex-2">
-                                        <div class="contact-name bold">Sofie</div>
-                                        <div class="contact-message fs-09">Je rentre demain</div>
-                                    </div>
-                                    <div class="contact-time-icon">
-                                        <div class="contact-time fs-09">Lundi</div>
-                                        <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="contact-item flex contact-list" data-id="Messages">
-                                <div class="profile-picture-item">
-                                    <img src="/assets/images/accueil/contacts/avatar-3.jpg" alt="profile picture">
-                                </div>
-                                <div class="contact-details flex flex-2">
-                                    <div class="contact-infos flex-2">
-                                        <div class="contact-name bold">Giselle</div>
-                                        <div class="contact-message fs-09">Cool</div>
-                                    </div>
-                                    <div class="contact-time-icon">
-                                        <div class="contact-time fs-09">Dimanche</div>
-                                        <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="contact-item flex contact-list" data-id="Messages">
-                                <div class="profile-picture-item">
-                                    <img src="/assets/images/accueil/contacts/avatar-4.jpg" alt="profile picture">
-                                </div>
-                                <div class="contact-details flex flex-2">
-                                    <div class="contact-infos flex-2">
-                                        <div class="contact-name bold">Audrey</div>
-                                        <div class="contact-message fs-09">Call me</div>
-                                    </div>
-                                    <div class="contact-time-icon">
-                                        <div class="contact-time fs-09">27/04/2023</div>
-                                        <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="contact-item flex contact-list" data-id="Messages">
-                                <div class="profile-picture-item">
-                                    <img src="/assets/images/accueil/contacts/avatar-6.jpg" alt="profile picture">
-                                </div>
-                                <div class="contact-details flex flex-2">
-                                    <div class="contact-infos flex-2">
-                                        <div class="contact-name bold">Stéphanelle</div>
-                                        <div class="contact-message fs-09">N'oublie pas le collis</div>
-                                    </div>
-                                    <div class="contact-time-icon">
-                                        <div class="contact-time fs-09">26/04/2023</div>
-                                        <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> 
-                </div> 
-            </section>
-            <section id="settings" class="page-aside-left">settings
-                <li class="return">return</li>
-            </section>
-            <section id="profile" class="page-aside-left">Profile
-                <li class="return">return</li>
-            </section>
-            <section id="contact" class="page-aside-left">Contact
-                <li class="return">return</li>
-            </section>
-            <section id="etiquette" class="page-aside-left">Etiquette
-                <li class="return">return</li>
-            </section>
-        </aside>
-        <div class="content">
-            <section id="content-home" class="page-content">
-                <div class="home-elements">
-                    <div class="home-picture">
-                        <img src="/assets/images/accueil/icons/icon-accueil-3.svg" alt="icon home">
-                    </div>
-                    <h1 class="home-title">WhatsApp Web</h1>
-                    <div class="home-description">
-                        Envoyez et recevez des messages sans avoir à garder votre téléphone connecté.<br>Utilisez WhatsApp sur un maximum de 4 appareils et 1&nbsp;téléphone, simultanément.
-                    </div>
-                    <div class="home-infos">
-                        <img src="/assets/images/accueil/icons/lock.svg" alt="lock">
-                        <p>Chiffré de bout en bout</p>
-                    </div>
-                </div>
-                <div class="home-footer"></div>
-            </section>
-            <section id="Archives" class="page-content">Archives</section>
-            <section id="Messages" class="page-content relative">
-                <div class="background-color-messages">
-                    <div class="header-messages flex aic">
-                        <div class="header-messages-bloc-1 flex aic flex-1">
-                            <div class="profile-picture">
-                                <img src="/assets/images/accueil/contacts/avatar-10.jpg" alt="profile picture">
-                            </div>
-                            <div class="contact-name-m bold">
-                                Business Mr Alain Tardif
-                            </div>
-                        </div>
-                        <div class="header-messages-bloc-2 flex aic flex-1">
-                            <div class="icon-search">
-                                <img src="/assets/images/message/icon-search-2.svg" alt="icone de recherche">
-                            </div>
-                            <div class="icon-menu">
-                                <img src="/assets/images/accueil/icons/3-bars.svg" alt="icone de menu 3 dots">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="body-messages">
-                        <div class="messages-blocs">
-                            <div class="message-bloc-contain">
-                                <div class="message-bloc receive flex gap-5">
-                                    <div class="message-content-icon relative flex-1">
-                                        <div class="icon-caret-left relative">
-                                            <img src="/assets/images/message/icon-pique-left.svg" alt="icon caret">
-                                        </div>
-                                        <div class="message-bloc-content">
-                                            Bonjour M. Espero, je n'arrive pas à trouver 
-                                            le code pour mettre mon image en pleine écran
-                                             (responsive), J'ai déjà vu ce code mais je 
-                                             n'arrive le trouver. Je vous remercie pour 
-                                             votre réponse. Je suis sur le TP5 le méga 
-                                             menu en Bien à vous
-                                        </div>
-                                    </div>
-                                    <div class="icon-arrow-time flex jcc aic">
-                                        <div class="icon-arrow-bottom flex-1 relative">
-                                            <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
-                                        </div>
-                                        <div class="message-time flex-1 flex">
-                                            15:10
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="message-bloc-contain p-l-500 m-b-4">
-                                <div class="audio-bloc send flex relative">
-                                    <div class="icon-caret-right">
-                                        <img src="/assets/images/message/icon-pique-right.svg" alt="icon caret">
-                                    </div>
-                                    <div class="audio-bloc-left">
-                                        <div class="profil-picture-microphone relative">
-                                            <div class="profile-picture-audio">
-                                                <img src="/assets/images/accueil/profil/profil.jpg" alt="photo de profile">
-                                            </div>
-                                             <div class="icon-microphone absolute">
-                                                 <img src="/assets/images/message/icon-microphone.svg" alt="icone microphone">
-                                             </div>
-                                        </div>
-                                        <div class="reading-speed none">
-                                            <div class="1-time">1 x</div>
-                                        </div>
-                                    </div>
-                                    <div class="audio-bars-time">
-                                        <div class="audio-bars flex">
-                                            <div id="playButton">
-                                                <img src="/assets/images/message/icon-play.svg" alt="bouton pause">
-                                            </div>
-                                            <div id="pauseButton" class="none">
-                                                <img src="/assets/images/message/icon-play2.svg" alt="bouton play">
-                                            </div>
-                                            <div class="audio-create flex aic">
-                                                <audio id="audio" src="/assets/audio/Nine_Lives-Unicorn_Heads.mp3"></audio>
-                                                <input id="progress" type="range" min="0" max="100" step="0.5" value="0"/>
-                                            </div>
-                                            <div class="icon-arrow-bottom-audio relative">
-                                                <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
-                                            </div>
-                                        </div>
-                                        <div class="audio-duration-time flex">
-                                            <div class="audio-duration fs-08 duration">
-                                                05:06
-                                            </div>
-                                            <div class="audio-time-icon-reception flex gap-5 aic">
-                                                <div class="audio-time fs-08 time">
-                                                    15:45
+    <div class="background-style relative">
+        <div class="background-green"></div>
+        <div class="container-home grid">
+           <aside id="aside-left">
+               <section id="aside-home" class="page-aside-left">
+                   <div class="aside-left-top">
+                       <div class="user-infos flex aic">
+                           <div class="profile-picture flex-1 menu-page" data-id="profile">
+                               <img src="/assets/images/accueil/profil/profil.jpg" alt="profile picture">
+                           </div>
+                           <div class="user-icons flex flex-1 jcse">
+                               <div class="status">
+                                   <img src="/assets/images/accueil/icons/statut.svg" alt="status icon">
+                               </div>
+                               <div class="message menu-page" data-id="contact">
+                                   <img src="/assets/images/accueil/icons/message.svg" alt="message icon">
+                               </div>
+                               <div class="menu relative">
+                                   <img src="/assets/images/accueil/icons/3-bars.svg" alt="icon menu">
+                                   <ul class="menu-lists">
+                                       <li class="" data-id="">Nouveau groupe</li>
+                                       <li class="" data-id="">Messages Importants</li>
+                                       <li class="" data-id="">Séléctionnez les discussions</li>
+                                       <!-- <li class="menu-page" data-id="profile">profile</li>
+                                       <li class="menu-page" data-id="contact">Nouvelle discussion</li> -->
+                                       <li class="menu-page" data-id="etiquette">etiquette</li>
+                                       <li class="menu-page" data-id="settings">Paramètres</li>
+                                       <li class="" data-id="">Déconnexion</li>
+                                   </ul>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="aside-left-content">
+                       <div class="search-bar flex aic">
+                           <div class="bars-icon flex aic relative">
+                               <div class="search-icon"></div>
+                               <input type="text" placeholder="Rechercher ou démarrer une nouvelle discussion">
+                           </div>
+                           <img src="/assets/images/accueil/icons/3-bars-menu.svg" alt="filter">
+                       </div>
+                       <div class="archives-conversations">
+                           <div class="messages-no-results none">
+                               <div class="no-results">
+                                   Aucun contact, discusion ou message trouvé
+                               </div>
+                               <div class="no-results-more">
+                                   Utilisez WhatsApp sur votre téléphone pour voir des discussions et messages plus anciens.
+                               </div>
+                           </div>    
+                           <div class="archives flex aic gap-25 contact-list" data-id="Archives">
+                               <div class="archives-icon flex aic">
+                                   <img src="/assets/images/accueil/icons/archives.svg" alt="">
+                               </div>
+                               <div class="archives-messages flex flex-1">
+                                   <div class="archives-content flex-1 contact-name bold">Archivées</div>
+                                   <div class="archives-number actives fs-09">6</div>
+                               </div>
+                           </div>
+                           <div class="contact-items">
+                               <div class="contact-item flex contact-list" data-id="Messages">
+                                   <div class="profile-picture-item">
+                                       <img src="/assets/images/accueil/contacts/avatar-10.jpg" alt="profile picture">
+                                   </div>
+                                   <div class="contact-details flex flex-2">
+                                       <div class="contact-infos flex-2">
+                                           <div class="contact-name bold">Business Mr Alain Tardif</div>
+                                           <div class="contact-message fs-09">2vq33v5y</div>
+                                       </div>
+                                       <div class="contact-time-icon">
+                                           <div class="contact-time fs-09">16:34</div>
+                                           <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="contact-item flex contact-list" data-id="Messages">
+                                   <div class="profile-picture-item">
+                                       <img src="/assets/images/accueil/contacts/avatar-7.jpg" alt="profile picture">
+                                   </div>
+                                   <div class="contact-details flex flex-2">
+                                       <div class="contact-infos flex-2">
+                                           <div class="contact-name bold">Flora Mariane</div>
+                                           <div class="contact-message fs-09">Quoi de neuf Vidhal ?</div>
+                                       </div>
+                                       <div class="contact-time-icon">
+                                           <div class="contact-time fs-09">08:20</div>
+                                           <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="contact-item flex contact-list" data-id="Messages">
+                                   <div class="profile-picture-item">
+                                       <img src="/assets/images/accueil/contacts/avatar-2.png" alt="profile picture">
+                                   </div>
+                                   <div class="contact-details flex flex-2">
+                                       <div class="contact-infos flex-2">
+                                           <div class="contact-name bold">Claire</div>
+                                           <div class="contact-message fs-09 flex gap-5">
+                                               <img src="/assets/images/accueil/icons/icone-reception.svg" alt="acusé de reception">
+                                               <span>Ok merci</span>
+                                           </div>
+                                       </div>
+                                       <div class="contact-time-icon">
+                                           <div class="contact-time fs-09">02:34</div>
+                                           <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="contact-item flex contact-list" data-id="Messages">
+                                   <div class="profile-picture-item">
+                                       <img src="/assets/images/accueil/contacts/software-developer-g40d2c2b0d_1920.jpg" alt="profile picture">
+                                   </div>
+                                   <div class="contact-details flex flex-2">
+                                       <div class="contact-infos flex-2">
+                                           <div class="contact-name bold">ACTU WEB DEVELOPER</div>
+                                           <div class="contact-message fs-09 flex gap-5">
+                                               <span>~ ~ C M U D :</span>
+                                               <img src="/assets/images/accueil/icons/icon-camera.svg" alt="acusé de reception">
+                                                Photo
+                                           </div>
+                                       </div>
+                                       <div class="contact-time-icon">
+                                           <div class="contact-time fs-09">Hier</div>
+                                           <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="contact-item flex contact-list" data-id="Messages">
+                                   <div class="profile-picture-item">
+                                       <img src="/assets/images/accueil/contacts/avatar-2.jpg" alt="profile picture">
+                                   </div>
+                                   <div class="contact-details flex flex-2">
+                                       <div class="contact-infos flex-2">
+                                           <div class="contact-name bold">Sofie</div>
+                                           <div class="contact-message fs-09">Je rentre demain</div>
+                                       </div>
+                                       <div class="contact-time-icon">
+                                           <div class="contact-time fs-09">Lundi</div>
+                                           <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="contact-item flex contact-list" data-id="Messages">
+                                   <div class="profile-picture-item">
+                                       <img src="/assets/images/accueil/contacts/avatar-3.jpg" alt="profile picture">
+                                   </div>
+                                   <div class="contact-details flex flex-2">
+                                       <div class="contact-infos flex-2">
+                                           <div class="contact-name bold">Giselle</div>
+                                           <div class="contact-message fs-09">Cool</div>
+                                       </div>
+                                       <div class="contact-time-icon">
+                                           <div class="contact-time fs-09">Dimanche</div>
+                                           <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="contact-item flex contact-list" data-id="Messages">
+                                   <div class="profile-picture-item">
+                                       <img src="/assets/images/accueil/contacts/avatar-4.jpg" alt="profile picture">
+                                   </div>
+                                   <div class="contact-details flex flex-2">
+                                       <div class="contact-infos flex-2">
+                                           <div class="contact-name bold">Audrey</div>
+                                           <div class="contact-message fs-09">Call me</div>
+                                       </div>
+                                       <div class="contact-time-icon">
+                                           <div class="contact-time fs-09">27/04/2023</div>
+                                           <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="contact-item flex contact-list" data-id="Messages">
+                                   <div class="profile-picture-item">
+                                       <img src="/assets/images/accueil/contacts/avatar-6.jpg" alt="profile picture">
+                                   </div>
+                                   <div class="contact-details flex flex-2">
+                                       <div class="contact-infos flex-2">
+                                           <div class="contact-name bold">Stéphanelle</div>
+                                           <div class="contact-message fs-09">N'oublie pas le collis</div>
+                                       </div>
+                                       <div class="contact-time-icon">
+                                           <div class="contact-time fs-09">26/04/2023</div>
+                                           <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div> 
+                   </div> 
+               </section>
+               <section id="settings" class="page-aside-left">settings
+                   <li class="return">return</li>
+               </section>
+               <section id="profile" class="page-aside-left">Profile
+                   <li class="return">return</li>
+               </section>
+               <section id="contact" class="page-aside-left">Contact
+                   <li class="return">return</li>
+               </section>
+               <section id="etiquette" class="page-aside-left">Etiquette
+                   <li class="return">return</li>
+               </section>
+           </aside>
+           <div class="content">
+               <section id="content-home" class="page-content">
+                   <div class="home-elements">
+                       <div class="home-picture">
+                           <img src="/assets/images/accueil/icons/icon-accueil-3.svg" alt="icon home">
+                       </div>
+                       <h1 class="home-title">WhatsApp Web</h1>
+                       <div class="home-description">
+                           Envoyez et recevez des messages sans avoir à garder votre téléphone connecté.<br>Utilisez WhatsApp sur un maximum de 4 appareils et 1&nbsp;téléphone, simultanément.
+                       </div>
+                       <div class="home-infos">
+                           <img src="/assets/images/accueil/icons/lock.svg" alt="lock">
+                           <p>Chiffré de bout en bout</p>
+                       </div>
+                   </div>
+                   <div class="home-footer"></div>
+               </section>
+               <section id="Archives" class="page-content">Archives</section>
+               <section id="Messages" class="page-content relative">
+                   <div class="background-color-messages">
+                       <div class="header-messages flex aic">
+                           <div class="header-messages-bloc-1 flex aic flex-1">
+                               <div class="profile-picture">
+                                   <img src="/assets/images/accueil/contacts/avatar-10.jpg" alt="profile picture">
+                               </div>
+                               <div class="contact-name-m bold">
+                                   Business Mr Alain Tardif
+                               </div>
+                           </div>
+                           <div class="header-messages-bloc-2 flex aic flex-1">
+                               <div class="icon-search">
+                                   <img src="/assets/images/message/icon-search-2.svg" alt="icone de recherche">
+                               </div>
+                               <div class="icon-menu">
+                                   <img src="/assets/images/accueil/icons/3-bars.svg" alt="icone de menu 3 dots">
+                               </div>
+                           </div>
+                       </div>
+                       <div class="body-messages">
+                           <div class="messages-blocs">
+                               <div class="message-bloc-contain start">
+                                   <div class="message-bloc receive flex gap-5">
+                                       <div class="message-content-icon relative flex-1">
+                                           <div class="icon-caret-left relative">
+                                               <img src="/assets/images/message/icon-pique-left.svg" alt="icon caret">
+                                           </div>
+                                           <div class="message-bloc-content">
+                                               Bonjour M. Espero, je n'arrive pas à trouver 
+                                               le code pour mettre mon image en pleine écran
+                                                (responsive), J'ai déjà vu ce code mais je 
+                                                n'arrive le trouver. Je vous remercie pour 
+                                                votre réponse. Je suis sur le TP5 le méga 
+                                                menu en Bien à vous
+                                           </div>
+                                       </div>
+                                       <div class="icon-arrow-time flex jcc aic">
+                                           <div class="icon-arrow-bottom flex-1 relative">
+                                               <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
+                                           </div>
+                                           <div class="message-time flex-1 flex">
+                                               15:10
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="message-bloc-contain end m-b-4">
+                                   <div class="audio-bloc send flex relative">
+                                       <div class="icon-caret-right">
+                                           <img src="/assets/images/message/icon-pique-right.svg" alt="icon caret">
+                                       </div>
+                                       <div class="audio-bloc-left">
+                                           <div class="profil-picture-microphone relative">
+                                               <div class="profile-picture-audio">
+                                                   <img src="/assets/images/accueil/profil/profil.jpg" alt="photo de profile">
+                                               </div>
+                                                <div class="icon-microphone absolute">
+                                                    <img src="/assets/images/message/icon-microphone.svg" alt="icone microphone">
                                                 </div>
-                                                <div class="icon-reception">
-                                                    <img src="/assets/images/accueil/icons/icone-reception.svg" alt="accusé de reception">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="message-bloc-contain p-l-500 m-t-4 m-b-4">
-                                <div class="message-bloc-s send flex gap-5 M-L-206 b-l-r-7">
-                                    <div class="message-content-icon relative flex-1">
-                                        <div class="icon-caret-right-s none">
-                                            <img src="/assets/images/message/icon-pique-right.svg" alt="icon caret">
-                                        </div>
-                                        <div class="message-bloc-content">
-                                            en HTML
-                                        </div>
-                                    </div>
-                                    <div class="icon-arrow-time flex jcc aic">
-                                        <div class="icon-arrow-bottom-s flex-1 relative">
-                                            <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
-                                        </div>
-                                        <div class="message-time flex-1 flex">
-                                            15:50
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="message-bloc-contain p-l-493 m-t-4 m-b-4">
-                                <div class="picture-bloc send">
-                                    <div class="icon-arrow-bottom-p">
-                                        <img class="" src="/assets/images/accueil/icons/Arrow-bottom-white.svg" alt="Arrow bottom">
-                                    </div>
-                                    <div class="picture-send">
-                                        <img src="/assets/images/message/Classe_slider_1.PNG" alt="bout de code">
-                                    </div>
-                                    <div class="message-time-reception flex gap-5 aic">
-                                        <div class="message-time c-white">
-                                            15:50
-                                        </div>
-                                        <div class="icon-reception">
-                                            <img src="/assets/images/accueil/icons/icone-reception.svg" alt="accusé de reception">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="message-bloc-contain p-l-493 m-t-4">
-                                <div class="picture-message-bloc send relative">
-                                    <div class="icon-arrow-bottom-p">
-                                        <img class="" src="/assets/images/accueil/icons/Arrow-bottom-white.svg" alt="Arrow bottom">
-                                    </div>
-                                    <div class="picture-send">
-                                        <img src="/assets/images/message/classe_slider_2PNG.PNG" alt="bout de code">
-                                    </div>
-                                    <div class="picture-content flex aic">
-                                        <div class="picture-message">
-                                            en CSS
-                                        </div>
-                                        <div class="message-time-reception-fixe flex aic gap-5">
-                                            <div class="message-time">
-                                                15:51
-                                            </div>
-                                            <div class="icon-reception">
-                                                <img src="/assets/images/accueil/icons/icone-reception.svg" alt="accusé de reception">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="message-bloc-contain">
-                                <div class="message-bloc receive flex gap-5">
-                                    <div class="message-content-icon relative flex-1">
-                                        <div class="icon-caret-left relative">
-                                            <img src="/assets/images/message/icon-pique-left.svg" alt="icon caret">
-                                        </div>
-                                        <div class="message-bloc-content">
-                                            Merci M. Espero c'est exactement ce qui me manquait c'est parfait
-                                        </div>
-                                    </div>
-                                    <div class="icon-arrow-time flex jcc aic">
-                                        <div class="icon-arrow-bottom flex-1 relative">
-                                            <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
-                                        </div>
-                                        <div class="message-time flex-1 flex">
-                                            15:52
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="message-bloc-contain p-l-493 p-r-140">
-                                <div class="response-message-bloc send left-54 relative">
-                                    <div class="icon-arrow-bottom-resp">
-                                        <img class="" src="/assets/images/accueil/icons/Arrow-bottom-white.svg" alt="Arrow bottom">
-                                    </div>
-                                    <div class="icon-caret-right-resp">
-                                        <img src="/assets/images/message/icon-pique-right.svg" alt="icon caret">
-                                    </div>
-                                    <div class="message-send-content">
-                                        <div class="message-send">
-                                            <div class="sender-name">
-                                                Business Mr Alain Tardif
-                                            </div>
-                                            <div class="sender-message">
-                                             Merci M. Espero c'est exactement ce qui me manquait c'est parfait
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="response flex aic jcsb">
-                                        <div class="response-message">
-                                            ok. Merci
-                                        </div>
-                                        <div class="message-time-reception-r flex aic  gap-5">
-                                            <div class="message-time">
-                                                15:52
-                                            </div>
-                                            <div class="icon-reception">
-                                                <img src="/assets/images/accueil/icons/icone-reception.svg" alt="accusé de reception">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="message-bloc-contain">
-                                <div class="message-bloc receive flex gap-5">
-                                    <div class="message-content-icon relative flex-1">
-                                        <div class="icon-caret-left relative">
-                                            <img src="/assets/images/message/icon-pique-left.svg" alt="icon caret">
-                                        </div>
-                                        <div class="message-bloc-content">
-                                            Je suis désolé M. Espero, mais 
-                                            je suis un peu perdu sur mon code, 
-                                            ca fait 2 h que j'essaie de trouver 
-                                            mon erreur, mais rien n'y fait, je suis 
-                                            sur le cours 12 de la session 170
-                                        </div>
-                                    </div>
-                                    <div class="icon-arrow-time flex jcc aic">
-                                        <div class="icon-arrow-bottom flex-1 relative">
-                                            <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
-                                        </div>
-                                        <div class="message-time flex-1 flex">
-                                            16:31
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="message-bloc-contain p-l-500">
-                                <div class="message-bloc-s send left-54 flex gap-5">
-                                    <div class="message-content-icon relative flex-1">
-                                        <div class="icon-caret-right-s">
-                                            <img src="/assets/images/message/icon-pique-right.svg" alt="icon caret">
-                                        </div>
-                                        <div class="message-bloc-content">
-                                            Ok, vous pouvez m'envoyer vos identifiants TeamViewer?
-                                        </div>
-                                    </div>
-                                    <div class="icon-arrow-time flex jcc aic">
-                                        <div class="icon-arrow-bottom-s flex-1 relative">
-                                            <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
-                                        </div>
-                                        <div class="message-time flex-1 flex">
-                                            16:33
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="message-bloc-contain m-12-4">
-                                <div class="message-bloc receive flex gap-5 b-r-7-5">
-                                    <div class="message-content-icon relative flex-1">
-                                        <div class="icon-caret-left relative">
-                                            <img src="/assets/images/message/icon-pique-left.svg" alt="icon caret">
-                                        </div>
-                                        <div class="message-bloc-content">
-                                            oui merci
-                                        </div>
-                                    </div>
-                                    <div class="icon-arrow-time flex jcc aic">
-                                        <div class="icon-arrow-bottom flex-1 relative">
-                                            <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
-                                        </div>
-                                        <div class="message-time flex-1 flex">
-                                            16:33
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="message-bloc-contain m-4">
-                                <div class="message-bloc receive flex gap-5 b-r-7-5">
-                                    <div class="message-content-icon relative flex-1">
-                                        <div class="icon-caret-left relative none">
-                                            <img src="/assets/images/message/icon-pique-left.svg" alt="icon caret">
-                                        </div>
-                                        <div class="message-bloc-content">
-                                            302 093 143
-                                        </div>
-                                    </div>
-                                    <div class="icon-arrow-time flex jcc aic">
-                                        <div class="icon-arrow-bottom flex-1 relative">
-                                            <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
-                                        </div>
-                                        <div class="message-time flex-1 flex">
-                                            16:34
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="message-bloc-contain m-4 m-last">
-                                <div class="message-bloc receive flex gap-5 b-r-7-5">
-                                    <div class="message-content-icon relative flex-1">
-                                        <div class="icon-caret-left relative none">
-                                            <img src="/assets/images/message/icon-pique-left.svg" alt="icon caret">
-                                        </div>
-                                        <div class="message-bloc-content">
-                                            2vq33v5y
-                                        </div>
-                                    </div>
-                                    <div class="icon-arrow-time flex jcc aic">
-                                        <div class="icon-arrow-bottom flex-1 relative">
-                                            <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
-                                        </div>
-                                        <div class="message-time flex-1 flex">
-                                            16:34
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer-messages flex aic">
-                        <div class="icon-smile footer-icons flex-1">
-                            <img src="/assets/images/message/icone-smile.svg" alt="icon smile">
-                        </div>
-                        <div class="icon-epingle footer-icons flex-1">
-                            <img src="/assets/images/message/icon-epingle.svg" alt="icon epingle">
-                        </div>
-                        <div class="input-bars flex-1 flex jcc aic">
-                            <input type="text" placeholder="Taper un message">
-                        </div>
-                        <div class="icon-micro footer-icons flex-1">
-                            <img src="/assets/images/message/icon-microphone-2.svg" alt="icon micro">
-                        </div>
-                    </div>
-                </div>
-            </section>
+                                           </div>
+                                           <div class="reading-speed none">
+                                               <div class="1-time">1 x</div>
+                                           </div>
+                                       </div>
+                                       <div class="audio-bars-time">
+                                           <div class="audio-bars flex">
+                                               <div id="playButton">
+                                                   <img src="/assets/images/message/icon-play.svg" alt="bouton pause">
+                                               </div>
+                                               <div id="pauseButton" class="none">
+                                                   <img src="/assets/images/message/icon-play2.svg" alt="bouton play">
+                                               </div>
+                                               <div class="audio-create flex aic">
+                                                   <audio id="audio" src="/assets/audio/Nine_Lives-Unicorn_Heads.mp3"></audio>
+                                                   <input id="progress" type="range" min="0" max="100" step="0.5" value="0"/>
+                                               </div>
+                                               <div class="icon-arrow-bottom-audio relative">
+                                                   <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
+                                               </div>
+                                           </div>
+                                           <div class="audio-duration-time flex">
+                                               <div class="audio-duration fs-08 duration">
+                                                   05:06
+                                               </div>
+                                               <div class="audio-time-icon-reception flex gap-5 aic">
+                                                   <div class="audio-time fs-08 time">
+                                                       15:45
+                                                   </div>
+                                                   <div class="icon-reception">
+                                                       <img src="/assets/images/accueil/icons/icone-reception.svg" alt="accusé de reception">
+                                                   </div>
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="message-bloc-contain end m-t-4 m-b-4">
+                                   <div class="message-bloc-s send flex gap-5 M-L-206 b-l-r-7">
+                                       <div class="message-content-icon relative flex-1">
+                                           <div class="icon-caret-right-s none">
+                                               <img src="/assets/images/message/icon-pique-right.svg" alt="icon caret">
+                                           </div>
+                                           <div class="message-bloc-content">
+                                               en HTML
+                                           </div>
+                                       </div>
+                                       <div class="icon-arrow-time flex jcc aic">
+                                           <div class="icon-arrow-bottom-s flex-1 relative">
+                                               <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
+                                           </div>
+                                           <div class="message-time flex-1 flex">
+                                               15:50
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="message-bloc-contain end m-t-4 m-b-4">
+                                   <div class="picture-bloc send">
+                                       <div class="icon-arrow-bottom-p">
+                                           <img class="" src="/assets/images/accueil/icons/Arrow-bottom-white.svg" alt="Arrow bottom">
+                                       </div>
+                                       <div class="picture-send">
+                                           <img src="/assets/images/message/Classe_slider_1.PNG" alt="bout de code">
+                                       </div>
+                                       <div class="message-time-reception flex gap-5 aic">
+                                           <div class="message-time c-white">
+                                               15:50
+                                           </div>
+                                           <div class="icon-reception">
+                                               <img src="/assets/images/accueil/icons/icone-reception.svg" alt="accusé de reception">
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="message-bloc-contain end m-t-4">
+                                   <div class="picture-message-bloc send relative">
+                                       <div class="icon-arrow-bottom-p">
+                                           <img class="" src="/assets/images/accueil/icons/Arrow-bottom-white.svg" alt="Arrow bottom">
+                                       </div>
+                                       <div class="picture-send">
+                                           <img src="/assets/images/message/classe_slider_2PNG.PNG" alt="bout de code">
+                                       </div>
+                                       <div class="picture-content flex aic">
+                                           <div class="picture-message">
+                                               en CSS
+                                           </div>
+                                           <div class="message-time-reception-fixe flex aic gap-5">
+                                               <div class="message-time">
+                                                   15:51
+                                               </div>
+                                               <div class="icon-reception">
+                                                   <img src="/assets/images/accueil/icons/icone-reception.svg" alt="accusé de reception">
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="message-bloc-contain start">
+                                   <div class="message-bloc receive flex gap-5">
+                                       <div class="message-content-icon relative flex-1">
+                                           <div class="icon-caret-left relative">
+                                               <img src="/assets/images/message/icon-pique-left.svg" alt="icon caret">
+                                           </div>
+                                           <div class="message-bloc-content">
+                                               Merci M. Espero c'est exactement ce qui me manquait c'est parfait
+                                           </div>
+                                       </div>
+                                       <div class="icon-arrow-time flex jcc aic">
+                                           <div class="icon-arrow-bottom flex-1 relative">
+                                               <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
+                                           </div>
+                                           <div class="message-time flex-1 flex">
+                                               15:52
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="message-bloc-contain end">
+                                   <div class="response-message-bloc send relative">
+                                       <div class="icon-arrow-bottom-resp">
+                                           <img class="" src="/assets/images/accueil/icons/Arrow-bottom-white.svg" alt="Arrow bottom">
+                                       </div>
+                                       <div class="icon-caret-right-resp">
+                                           <img src="/assets/images/message/icon-pique-right.svg" alt="icon caret">
+                                       </div>
+                                       <div class="message-send-content">
+                                           <div class="message-send">
+                                               <div class="sender-name">
+                                                   Business Mr Alain Tardif
+                                               </div>
+                                               <div class="sender-message">
+                                                Merci M. Espero c'est exactement ce qui me manquait c'est parfait
+                                               </div>
+                                           </div>
+                                       </div>
+                                       <div class="response flex aic jcsb">
+                                           <div class="response-message">
+                                               ok. Merci
+                                           </div>
+                                           <div class="message-time-reception-r flex aic  gap-5">
+                                               <div class="message-time">
+                                                   15:52
+                                               </div>
+                                               <div class="icon-reception">
+                                                   <img src="/assets/images/accueil/icons/icone-reception.svg" alt="accusé de reception">
+                                               </div>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="message-bloc-contain start">
+                                   <div class="message-bloc receive flex gap-5">
+                                       <div class="message-content-icon relative flex-1">
+                                           <div class="icon-caret-left relative">
+                                               <img src="/assets/images/message/icon-pique-left.svg" alt="icon caret">
+                                           </div>
+                                           <div class="message-bloc-content">
+                                               Je suis désolé M. Espero, mais 
+                                               je suis un peu perdu sur mon code, 
+                                               ca fait 2 h que j'essaie de trouver 
+                                               mon erreur, mais rien n'y fait, je suis 
+                                               sur le cours 12 de la session 170
+                                           </div>
+                                       </div>
+                                       <div class="icon-arrow-time flex jcc aic">
+                                           <div class="icon-arrow-bottom flex-1 relative">
+                                               <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
+                                           </div>
+                                           <div class="message-time flex-1 flex">
+                                               16:31
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="message-bloc-contain end">
+                                   <div class="message-bloc-s send  flex gap-5">
+                                       <div class="message-content-icon relative flex-1">
+                                           <div class="icon-caret-right-s">
+                                               <img src="/assets/images/message/icon-pique-right.svg" alt="icon caret">
+                                           </div>
+                                           <div class="message-bloc-content">
+                                               Ok, vous pouvez m'envoyer vos identifiants TeamViewer?
+                                           </div>
+                                       </div>
+                                       <div class="icon-arrow-time flex jcc aic">
+                                           <div class="icon-arrow-bottom-s flex-1 relative">
+                                               <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
+                                           </div>
+                                           <div class="message-time flex-1 flex">
+                                               16:33
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="message-bloc-contain start m-12-4">
+                                   <div class="message-bloc receive flex gap-5 b-r-7-5">
+                                       <div class="message-content-icon relative flex-1">
+                                           <div class="icon-caret-left relative">
+                                               <img src="/assets/images/message/icon-pique-left.svg" alt="icon caret">
+                                           </div>
+                                           <div class="message-bloc-content">
+                                               oui merci
+                                           </div>
+                                       </div>
+                                       <div class="icon-arrow-time flex jcc aic">
+                                           <div class="icon-arrow-bottom flex-1 relative">
+                                               <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
+                                           </div>
+                                           <div class="message-time flex-1 flex">
+                                               16:33
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="message-bloc-contain start m-4">
+                                   <div class="message-bloc receive flex gap-5 b-r-7-5">
+                                       <div class="message-content-icon relative flex-1">
+                                           <div class="icon-caret-left relative none">
+                                               <img src="/assets/images/message/icon-pique-left.svg" alt="icon caret">
+                                           </div>
+                                           <div class="message-bloc-content">
+                                               302 093 143
+                                           </div>
+                                       </div>
+                                       <div class="icon-arrow-time flex jcc aic">
+                                           <div class="icon-arrow-bottom flex-1 relative">
+                                               <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
+                                           </div>
+                                           <div class="message-time flex-1 flex">
+                                               16:34
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                               <div class="message-bloc-contain start m-4 m-last">
+                                   <div class="message-bloc receive flex gap-5 b-r-7-5">
+                                       <div class="message-content-icon relative flex-1">
+                                           <div class="icon-caret-left relative none">
+                                               <img src="/assets/images/message/icon-pique-left.svg" alt="icon caret">
+                                           </div>
+                                           <div class="message-bloc-content">
+                                               2vq33v5y
+                                           </div>
+                                       </div>
+                                       <div class="icon-arrow-time flex jcc aic">
+                                           <div class="icon-arrow-bottom flex-1 relative">
+                                               <img class="" src="/assets/images/accueil/icons/Arrow-bottom.svg" alt="Arrow bottom">
+                                           </div>
+                                           <div class="message-time flex-1 flex">
+                                               16:34
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="footer-messages flex aic">
+                           <div class="icon-smile footer-icons flex-1">
+                               <img src="/assets/images/message/icone-smile.svg" alt="icon smile">
+                           </div>
+                           <div class="icon-epingle footer-icons flex-1">
+                               <img src="/assets/images/message/icon-epingle.svg" alt="icon epingle">
+                           </div>
+                           <div class="input-bars flex-1 flex jcc aic">
+                               <input type="text" placeholder="Taper un message">
+                           </div>
+                           <div class="icon-micro footer-icons flex-1">
+                               <img src="/assets/images/message/icon-microphone-2.svg" alt="icon micro">
+                           </div>
+                       </div>
+                   </div>
+               </section>
+           </div>
         </div>
-     </div>
+    </div>
   
    
      <script src="/assets/js/functions.js"></script>

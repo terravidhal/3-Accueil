@@ -84,7 +84,7 @@ body {
 
  /** LISTES **/
 
- ul li{
+ ul li, li{
      list-style: none;
  }
 
@@ -184,6 +184,9 @@ body {
 
  .M-L-206{
    margin-left: 206px;
+ }
+ .M-B-20{
+   margin-bottom: 20px;
  }
 
  /** FLEXBOX **/
