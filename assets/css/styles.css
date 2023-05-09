@@ -417,10 +417,14 @@
 
 .send {
     background-color: var(--main-color-bg-message-send);
+    position: relative;
+    left: 63%;
 }
 
 .receive {
     background-color: white;
+    position: relative;
+    left: 1%;
 }
 
 .header-messages {
@@ -428,10 +432,11 @@
     padding: 10px 16px;
     background-color: var(--panel-header-background);
     box-sizing: border-box;
-    display: flex;
-    align-items: center;
     width: 100%;
     height: 59px;
+}
+.header-messages-bloc-2{
+    justify-content: end;
 }
 
 .body-messages {
@@ -440,6 +445,9 @@
     scrollbar-color: rgba(var(--black-rgb), .2) rgba(var(--white-rgb), .1);
     scrollbar-width: thin;
     overflow-x: hidden;
+    position: relative;
+    padding: 0 40px;
+    box-sizing: border-box;
 }
 .body-messages::-webkit-scrollbar{
     height: 10px;
@@ -467,10 +475,8 @@
     height: 55px;
     border-radius: 50%;
 }
-
 .message-bloc-contain {
-    width: 941.6px;
-    padding: 0 63px;
+    width: 100%;
     margin: 12px 0;
     box-sizing: border-box;
     display: flex;
@@ -480,19 +486,6 @@
 .message-bloc-contain.m-12-4 {
     margin: 12px 0 3px 0;
 }
-
-.message-bloc-contain.p-l-500 {
-    padding-left: 500px;
-}
-
-.message-bloc-contain.p-l-493 {
-    padding-left: 493px;
-}
-
-.message-bloc-contain.p-r-140 {
-    padding-right: 140px;
-}
-
 .message-bloc-contain.m-4 {
     margin: 3px 0;
 }
@@ -516,10 +509,15 @@
     border-radius: 7.5px;
     border-top-left-radius: 0;
     border-left: 1px solid white;
-    position: relative;
     z-index: 200;
 }
 
+.response-message-bloc.left-54{
+    left: 51%;
+}
+.message-bloc-s.left-54{
+    left: 55%;
+}
 .message-bloc.b-r-7-5 {
     border-top-left-radius: 7.5px;
 }
@@ -565,7 +563,6 @@
     border-radius: 7.5px;
     border-top-right-radius: 0;
     border-right: 1px solid var(--main-color-bg-message-send);
-    position: relative;
     z-index: 200;
 }
 
@@ -775,7 +772,6 @@ input[type=range]::-moz-range-thumb {
     border-radius: 7.5px;
     border-top-right-radius: 0;
     border-right: 1px solid var(--main-color-bg-message-send);
-    position: relative;
     z-index: 200;
     padding: 5px;
 }
@@ -879,4 +875,47 @@ input[type=range]::-moz-range-thumb {
 .icon-smile img{
     width: 26px;
     height: 26px;
+}
+
+
+
+
+@media screen and (min-width: 1519px) {
+
+    .send {
+        left: 69%;
+      }
+    
+    .response-message-bloc.left-54{
+        left: 59%;
+    }
+    .message-bloc-s.left-54{
+        left: 62%;
+    }
+}
+@media screen and (min-width: 1622px) {
+
+    .send {
+        left: 72%;
+      }
+
+    .response-message-bloc.left-54{
+        left: 62.5%;
+    }
+    .message-bloc-s.left-54{
+        left: 65%;
+    }
+}
+@media screen and (min-width: 1769px) {
+
+    .send {
+        left: 75%;
+      }
+
+    .response-message-bloc.left-54{
+        left: 67%;
+    }
+    .message-bloc-s.left-54{
+        left: 69%;
+    }
 }
