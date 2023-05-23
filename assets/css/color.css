@@ -40,5 +40,10 @@
     --bubble-meta: #667781;
     --ptt-gray-badge: rgba(84,101,111,0.5);
     --rich-text-panel-background:#f0f2f5;
-    ----border-stronger:#e9edef;
+    --border-stronger:#e9edef;
+    --panel-background-colored : #008069;
+    --primary-strong: #1111b21;
+    --secondary: #667781;
+    --background-default-hover: #f5f6f6;
+    --primary-strong: #111b21;
 }
