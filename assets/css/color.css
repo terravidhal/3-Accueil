@@ -46,4 +46,6 @@
     --secondary: #667781;
     --background-default-hover: #f5f6f6;
     --primary-strong: #111b21;
+    --shadow-light: rgba(11,20,26,0.08);
+    --shadow-rgb: 11,20,26;
 }
