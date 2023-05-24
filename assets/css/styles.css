@@ -11,8 +11,6 @@
     height: 122px;
 }
 
-
-
 /******** CONTAINER-HOME ***************/
 .container-home {
     height: 95vh;
@@ -30,7 +28,6 @@
 #aside-left {
     grid-area: aside-left;
     background-color: var(--main-color-white);
-    /* border: 1px solid var(--main-color-border); */
 }
 #aside-home {
     border-right: 1px solid var(--main-color-border);
@@ -56,8 +53,8 @@
     height: 100%;
 }
 
-#settings {
-    /* background-color: red; */
+/* #settings {
+    /* background-color: red; 
 }
 
 #profile {
@@ -65,12 +62,12 @@
 }
 
 #contact {
-    /* background-color: gray; */
+    /* background-color: gray;
 }
 
 #etiquette {
-    /* background-color: gray; */
-}
+    /* background-color: gray; 
+} */
 
 
 /******** CONTENT ***************/
@@ -259,6 +256,7 @@
     scrollbar-color: rgba(var(--black-rgb), .2) rgba(var(--white-rgb), .1);
     scrollbar-width: thin;
     overflow-x: hidden;
+    background-color: white;
 }
 
 .archives {
@@ -365,6 +363,7 @@
 /********* CONTENT HOME ***************/
 
 #content-home {
+    padding: 60px 0 0 0;
     height: 100%;
     box-sizing: border-box;
     display: flex;
@@ -436,6 +435,33 @@
     background-color: var(--main-color-home-footer);
 }
 
+/*** TRANSITION *******************/
+
+.page-aside-left{
+    transform: translateX(0%);
+    transition: transform 0.3s ease-in-out;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0; 
+    width: 409.4px;
+}
+.page-aside-left.single{
+    transform: translateX(0%);
+    transition: none;
+    position: relative;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: auto ;
+     opacity: 1; 
+}
+.page-aside-left.translate{
+    transform: translateX(-100%);
+    opacity: 0; /*animation ppte s'active apres 5seconde*/
+     transition: all 0.3s ease-in-out; 
+
+}
 
 /***************** MESSAGES *************************/
 
@@ -963,7 +989,7 @@ input[type=range]::-moz-range-thumb {
     width: 53px;
 }
 
-#settings .body-settings {
+ .body-settings { /*#settings .body-settings*/
     background-color: white;
     /* height: calc(100vh - 108px); */
     height: calc(95vh - 108px);
@@ -1036,6 +1062,7 @@ input[type=range]::-moz-range-thumb {
     display: flex;
     align-items: center;
     width: calc(404.4px - 74px);
+    box-sizing: border-box;
 }
 .icone-item{
     width: 74px;
@@ -1114,12 +1141,12 @@ input[type=range]::-moz-range-thumb {
 }
 .name{
     color: #667781;
-    font-size: 16px;
+    font-size: 18px;
 }
 .name.activeCol{
     color: #2d3840;
 }
-.infos-name{
+.body-settings.profile .infos-name{
     margin-top: 22px;
     color: #667781;
     line-height: 1.4;
@@ -1247,14 +1274,14 @@ input[type=range]::-moz-range-thumb {
 
 /*** TRANSITION ****/
 
-/* .body-profile{
+.body-profile{
     transform: translateY(-300px);
     opacity: 0;
     position: relative;
     z-index: 900;
-    transition: transform 0.5s ease-in-out , opacity 0.8s ease-in-out;
+    transition: transform 0.5s ease-in-out , opacity 0.6s ease-in-out;
 }
-.body-profile.bottom{
+.body-profile.escalier{
     opacity: 1;
     transform: translateY(0px);
 }
@@ -1263,12 +1290,12 @@ input[type=range]::-moz-range-thumb {
     transform: translateY(-1500px);
     position: relative;
     z-index: 0;
-    transition: transform 1s ease-in-out , opacity 1.8s ease-in-out;
+    transition: transform 0.9s ease-in-out , opacity 1.2s ease-in-out;
 }
-.part-animate.bt{
+.part-animate.esc{
     opacity: 1;
     transform: translateY(0px);
-} */
+}
 
 
 /******** CONTACTS ***************/
@@ -1381,7 +1408,6 @@ input[type=range]::-moz-range-thumb {
 .no-clicks{
     pointer-events: none;
 }
-
 
 
 

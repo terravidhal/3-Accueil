@@ -18,7 +18,8 @@ var listenersFunctions = {
         // Get all the pages of the "Aside-left" part and hide them, except the 1st
         for (let index = 1; index < pagesAsideLeft.length; index++) {
             const page = pagesAsideLeft[index];
-            page.style.display = "none";
+           // page.style.display = "none";
+           page.classList.add('translate');  
         }
     },
     showPagesAside: () => {
@@ -26,16 +27,20 @@ var listenersFunctions = {
             const menuPage = menuPages[index];
             const pageID = menuPage.getAttribute('data-id');
             menuPage.addEventListener('click', () => {
-                for (let index = 0; index < pagesAsideLeft.length; index++) {
+                for (let index = 1; index < pagesAsideLeft.length; index++) {
                     const element = pagesAsideLeft[index];
-                    element.style.display = 'none';
-
+                   // element.style.display = 'none';
+                   element.classList.add('translate');   
                 }
+
                 // Displays the item corresponding to the ID of the clicked page
                 var pageElement = document.getElementById(pageID);
-                pageElement.style.display = 'block';
-                //pageElement.classList.remove('translate');
-
+                //pageElement.style.display = 'block';
+                //Add Transition CSS
+                 pageElement.classList.remove('translate');
+                 document.querySelector('.body-profile').classList.add('escalier');
+                 document.querySelector('.part-animate').classList.add('esc');
+                 
             });
         }
     },
@@ -43,12 +48,12 @@ var listenersFunctions = {
         for (let index = 0; index < returnHome.length; index++) {
             const returnIcon = returnHome[index];
             returnIcon.addEventListener('click', () => {
-                pagesAsideLeft[0].style.display = 'block';
+                //pagesAsideLeft[0].style.display = 'block';
+                //Add Transition CSS
+                pagesAsideLeft[0].classList.remove('translate');
                 listenersFunctions.hiddenPagesAside();
-                // for (let index = 1; index < pagesAsideLeft.length; index++) {
-                //     const page = pagesAsideLeft[index];
-                //     page.classList.add('translate');
-                // }
+                document.querySelector('.body-profile').classList.remove('escalier');
+                document.querySelector('.part-animate').classList.remove('esc');
             })
         }
     },
@@ -69,8 +74,8 @@ var listenersFunctions = {
                 }
                 listenersFunctions.showActiveDiscussion(contactList, Class = "active-bg")
 
-                const pageElements = document.getElementById(pageContentID);
-                pageElements.style.display = 'block';
+                 const pageElements = document.getElementById(pageContentID);
+                 pageElements ? pageElements.style.display = 'block' : null;
                 listenersFunctions.showFocusInput();
             });
         }
